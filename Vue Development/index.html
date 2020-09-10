@@ -7,8 +7,10 @@
 </head>
 <body>
     
-    <div id="appRoot">
-        {{ say  }}
+    <div id="appRoot" >
+        <div v-once>{{say}}</div>
+        <div v-text="say"></div>
+        <div v-html="rawhtml"></div>
     </div>
 
     <script src="assets/js/vue.js" ></script>
