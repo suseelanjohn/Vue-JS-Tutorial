@@ -8,20 +8,12 @@
 <body>
     
     <div id="appRoot"  >
-        <template v-if="count == 1">
-            <h1>Level Heading</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis explicabo ea fugit, modi ullam nam minima dolorum corrupti alias dignissimos fuga laboriosam non animi quisquam! Ducimus debitis commodi illum!</p>
-        </template>
-        <div v-else-if="count == 2">
-            <h1>Level Heading</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis explicabo ea fugit, modi ullam nam minima dolorum corrupti alias dignissimos fuga laboriosam non animi quisquam! Ducimus debitis commodi illum!</p>
-        </div>
-        <div v-else-if="count == 3">
-            Pink
-        </div>
-        <div v-else>
-          Red
-        </div>
+        <ul v-for="(student, index ) in students">
+           {{ index }}     {{ student.name }}
+         </ul>
+       <!-- <ul v-for="(value, key) in studentObj">
+          {{ key }}  || {{ value }}
+       </ul> -->
     </div>
 
     <script src="assets/js/vue.js" ></script>

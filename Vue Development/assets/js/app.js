@@ -1,6 +1,22 @@
 let app = new Vue({
     el:'#appRoot',
     data:{
-        count:1
+        students:[ {
+            name:"Raja",
+            registerNumber:"001",
+            age:22,
+            cource:"CSE"
+        },{
+            name:"Rani",
+            registerNumber:"002",
+            age:22,
+            cource:"CSE"
+        }],
+        studentObj:{
+            name:"Raja",
+            registerNumber:"001",
+            age:22,
+            cource:"CSE"
+        }
     }
 });
