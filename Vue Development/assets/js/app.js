@@ -1,22 +1,7 @@
 let app = new Vue({
     el:'#appRoot',
     data:{
-        students:[ {
-            name:"Raja",
-            registerNumber:"001",
-            age:22,
-            cource:"CSE"
-        },{
-            name:"Rani",
-            registerNumber:"002",
-            age:22,
-            cource:"CSE"
-        }],
-        studentObj:{
-            name:"Raja",
-            registerNumber:"001",
-            age:22,
-            cource:"CSE"
-        }
+        url:"http://www.google.com",
+        imgUrl:"https://lh3.googleusercontent.com/proxy/7C2x4WwynoJW7WccgG75au7CXa3gfISnfR2V6tGcrm92ej7K-XEGXoYP6_8fwifBjnBrvfA57lHtxfc0S6pPzfpHYUw6KvCuz4UEy7jPRdBc77qiwNtGqiPOt8cktfRiWqXF65uoWmM"
     }
 });
