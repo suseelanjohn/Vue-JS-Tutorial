@@ -8,12 +8,8 @@
 <body>
     
     <div id="appRoot"  >
-        <ul v-for="(student, index ) in students">
-           {{ index }}     {{ student.name }}
-         </ul>
-       <!-- <ul v-for="(value, key) in studentObj">
-          {{ key }}  || {{ value }}
-       </ul> -->
+       <a v-bind:href="url">Google</a>
+       <img :src="imgUrl">
     </div>
 
     <script src="assets/js/vue.js" ></script>
